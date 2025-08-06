@@ -20,6 +20,9 @@ def hash_password(password):
 def check_login(username, password):
     users = load_users()
     hashed = hash_password(password)
+    print("DEBUG: trying to log in as", username)
+    print("DEBUG: expected hash", users.get(username))
+    print("DEBUG: actual hash", hashed)
     return users.get(username) == hashed
 
 def create_user(username, password):
