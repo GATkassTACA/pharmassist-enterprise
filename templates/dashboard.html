@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Admin Dashboard</title></head>
+<body>
+  <h2>Admin Dashboard</h2>
+  <form method="post">
+    <input name="new_username" placeholder="New Username" required><br>
+    <input name="new_password" placeholder="New Password" required><br>
+    <button type="submit">Create User</button>
+  </form>
+  <p>{{ message }}</p>
+  <h3>Existing Users</h3>
+  <ul>
+    {% for user in users %}
+      <li>{{ user }}</li>
+    {% endfor %}
+  </ul>
+  <a href="/">Back</a>
+</body>
+</html>
