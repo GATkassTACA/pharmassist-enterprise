@@ -1,4 +1,7 @@
-
+def load_users():
+    return {
+        "kent": "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd038bbf00a8fba89"
+    }
 import json
 import os
 import hashlib
