@@ -2,7 +2,9 @@ import hashlib
 
 def load_users():
     return {
-        "kent": "ff95c1631b1c2574910da9f96c353b92c27bb4d4f98ff96b59177981a5eb8c3b"
+        "kent": "import hashlib
+print(hashlib.sha256("KentPassword123".encode()).hexdigest())
+8c3b"
     }
 
 def hash_password(password):
