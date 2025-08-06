@@ -1,7 +1,7 @@
 
 from flask import Flask, render_template, request, redirect, url_for, send_file, session
 import os
-from auth import check_login, load_users, create_user
+from auth import check_login, load_users
 from ocr import extract_text_from_pdf
 from werkzeug.utils import secure_filename
 from dotenv import load_dotenv
