@@ -1,20 +1,26 @@
+<!-- dashboard.html -->
 <!DOCTYPE html>
-<html>
-<head><title>Admin Dashboard</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Add your CSS and JavaScript links here -->
+</head>
 <body>
-  <h2>Admin Dashboard</h2>
-  <form method="post">
-    <input name="new_username" placeholder="New Username" required><br>
-    <input name="new_password" placeholder="New Password" required><br>
-    <button type="submit">Create User</button>
-  </form>
-  <p>{{ message }}</p>
-  <h3>Existing Users</h3>
-  <ul>
-    {% for user in users %}
-      <li>{{ user }}</li>
-    {% endfor %}
-  </ul>
-  <a href="/">Back</a>
+    <header>
+        <h1>Dashboard</h1>
+        <!-- Add navigation links or other header content here -->
+    </header>
+    <main>
+        <section>
+            <h2>Welcome to the Dashboard</h2>
+            <!-- Add main content for the dashboard here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <!-- Add footer links or information here -->
+    </footer>
 </body>
 </html>
